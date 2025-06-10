@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Path Visualizer</title>
+    <link rel="icon" href="./assets/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+  </head>
+  <body>
+    <div class="template">
+      <header>
+        <nav>
+          <a href="./index.html" class="logo">Pathfinding Visualizer</a>
+          <div class="btn" id="visualizeBtn">VISUALIZE</div>
+          <div class="btn-controls">
+            <div class="round-btn" id="pauseBtn" title="Pause">⏸</div>
+            <div class="round-btn" id="resumeBtn" title="Resume">▶</div>
+            <div class="round-btn" id="stopBtn" title="Stop">⏹</div>
+          </div>
+
+          <ul class="nav-menu">
+            <li>
+              <a href="#" id="clearPathBtn">Clear Path</a>
+            </li>
+            <li>
+              <a href="#" id="clearBoardBtn">Clear Board</a>
+            </li>
+            <li>
+              <a href="#" id="generateMazeBtn">Generate Maze</a>
+            </li>
+            <li class="drop-box">
+              <a href="#">Pixel<i class="fa fa-caret-down"></i></a>
+              <ul class="drop-menu">
+                <li><a href="#">14px</a></li>
+                <li><a href="#">16px</a></li>
+                <li><a href="#">18px</a></li>
+                <li><a href="#">20px</a></li>
+                <li class="active"><a href="#">22px</a></li>
+                <li><a href="#">24px</a></li>
+                <li><a href="#">26px</a></li>
+              </ul>
+            </li>
+            <li class="drop-box">
+              <a href="#">Speed<i class="fa fa-caret-down"></i></a>
+              <ul class="drop-menu">
+                <li><a href="#">Slow</a></li>
+                <li class="active"><a href="#">Normal</a></li>
+                <li><a href="#">Fast</a></li>
+              </ul>
+            </li>
+            <li class="drop-box">
+              <a href="#">Algorithms<i class="fa fa-caret-down"></i></a>
+              <ul class="drop-menu">
+                <li class="active"><a href="#">BFS</a></li>
+                <li><a href="#">DFS</a></li>
+                <li><a href="#">Dijkstra Algorithm</a></li>
+                <li><a href="#">Greedy Best-First Search</a></li>
+                <li><a href="#">A* algorithm</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="guide-bar">
+          <li>
+            <span class="icon source"></span>
+            <span class="text">Source Node</span>
+          </li>
+          <li>
+            <span class="icon target"></span>
+            <span class="text">Target Node</span>
+          </li>
+          <li>
+            <span class="icon path"></span>
+            <span class="text">Path Node</span>
+          </li>
+          <li>
+            <span class="icon visited"></span>
+            <span class="text">Visited Node</span>
+          </li>
+          <li>
+            <span class="icon unvisited"></span>
+            <span class="text">Unvisited Node</span>
+          </li>
+        </ul>
+      </header>
+
+      <div id="board"></div>
+    </div>
+  </body>
+  <script src="./JS/app.js"></script>
+  <script src="./JS/algorithms.js"></script>
+</html>
