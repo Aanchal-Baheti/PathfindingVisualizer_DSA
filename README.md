@@ -1,4 +1,3 @@
-# PathfindingVisualizer_DSA
 # 🧭 Pathfinding Visualizer
 
 An interactive, grid-based simulation tool for visualizing classical search algorithms in real-time using JavaScript, HTML, and CSS. It supports animated execution of BFS, DFS, Dijkstra’s, A*, and Greedy Best-First Search, along with procedural maze generation.
